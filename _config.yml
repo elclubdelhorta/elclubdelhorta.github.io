@@ -13,23 +13,11 @@ avatar: assets/img/avatar.webp                         # Empty for no avatar in 
 # Header and footer text
 header_text: Bienvenidos al Club de l'Horta
 header_feature_image: assets/img/barraca5.jpeg
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
 post_navigation: true
 color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
-
-# Features
-katex: false                                             # Enable if using math markup
-google_analytics:                                       # Tracking ID, e.g. "UA-000000-01"
-disqus_shortname:                                       # Your discus shortname for comments
-layout_variables:                                       # Open the "_sass > base" folder, and open "_variables.scss"
-footer_icons:                                           # In _data/social.yml
-share_buttons:                                          # In _data/social.yml
-authors:                                                # In _data/authors.yml
-language:                                               # In _data/language.yml
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
@@ -64,12 +52,6 @@ pagination:
   indexpage: 'index'
 
 ############################################################
-
-# PORTFOLIO
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:name
 
 # BUILD SETTINGS
 markdown: kramdown
