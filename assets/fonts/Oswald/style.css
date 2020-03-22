@@ -1,0 +1,13 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("./fonts/Oswald.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Oswald.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Oswald.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/Oswald.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Oswald.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Oswald.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Oswald.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

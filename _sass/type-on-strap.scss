@@ -4,13 +4,16 @@
 @import 'external/reset';
 @import 'external/syntax';
 @import 'external/font-awesome';
+@import 'external/jr';
 @import 'external/pacifico';
 @import 'external/katex';
 @import 'external/source-sans-pro';
+@import 'external/oswald';
 // Base
 @import 'base/global';
 @import 'base/utility';
 // Posts
+@import 'layouts/home';
 @import 'layouts/posts';
 @import 'layouts/blog';
 @import 'layouts/page';

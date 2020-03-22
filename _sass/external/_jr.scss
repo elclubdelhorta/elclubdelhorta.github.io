@@ -1,0 +1,17 @@
+/*!
+ * Font: SIL OFL 1.1, CSS: MIT License
+ */
+
+$jr-font-path: "../../assets/fonts/jr" !default;
+
+@font-face {
+    font-family: 'jr';
+    src: url('#{$jr-font-path}/jr.eot'); /* IE9 Compat Modes */
+    src: url('#{$jr-font-path}/jr.eot?#iefix') format('embedded-opentype'),
+         url('#{$jr-font-path}/jr.woff2') format('woff2'),
+         url('#{$jr-font-path}/jr.woff') format('woff'),/* Modern Browsers */
+         url('#{$jr-font-path}/jr.ttf') format('truetype'),/* Safari, Android, iOS */
+         url('#{$jr-font-path}/jr.svg#jr') format('svg');/* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}

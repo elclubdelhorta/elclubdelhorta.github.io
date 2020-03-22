@@ -1,16 +1,18 @@
 # SITE CONFIGURATION
 baseurl: "/"
-url: "https://sylhare.github.io"
+url: ""
 
 # THEME-SPECIFIC CONFIGURATION
-title: Type on Strap                                    # site's title
-description: "A website with blog posts and pages"      # used by search engines
-avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
-favicon: assets/favicon.ico                             # Icon displayed in the tab
+title: El Club de l'Horta                                    # site's title
+
+description: "El Club de l´Horta es una asociación sin ánimo de lucro que contribuye a la creación de la conciencia ambiental de sus socios y promueve el conocimiento de las técnicas agrícolas sostenibles, dentro del ámbito de la educación."      # used by search engines
+
+avatar: assets/img/avatar.webp                         # Empty for no avatar in navbar
+
 
 # Header and footer text
-header_text: Change <code>header_text</code> in <code>_config.yml</code>  # Change Blog header text
-header_feature_image: assets/img/pexels/triangular.jpeg
+header_text: Bienvenidos al Club de l'Horta
+header_feature_image: assets/img/barraca5.jpeg
 footer_text: >
   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
@@ -20,7 +22,7 @@ post_navigation: true
 color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
 
 # Features
-katex: true                                             # Enable if using math markup
+katex: false                                             # Enable if using math markup
 google_analytics:                                       # Tracking ID, e.g. "UA-000000-01"
 disqus_shortname:                                       # Your discus shortname for comments
 layout_variables:                                       # Open the "_sass > base" folder, and open "_variables.scss"
@@ -29,9 +31,39 @@ share_buttons:                                          # In _data/social.yml
 authors:                                                # In _data/authors.yml
 language:                                               # In _data/language.yml
 
-# PAGINATION
-paginate: 5
-paginate_path: "blog/page:num"
+############################################################
+# Site configuration for the Jekyll 3 Pagination Gem
+# The values here represent the defaults if nothing is set
+pagination:
+  enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 5
+  permalink: '/page/:num/' # Pages are index.html inside this folder (default)
+  #permalink: '/page/:num.html' # Pages are simple html files
+  #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
+  title: '' #':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+ # Optional,omit or set both before and after to zero to disable.
+ # Controls how the pagination trail for the paginated pages look like.
+  trail:
+    before: 2
+    after: 2
+
+  # Optional, the default file extension for generated pages (e.g html, json, xml).
+  # Internally this is set to html by default
+  extension: html
+
+  # Optional, the default name of the index file for generated pages (e.g. 'index.html')
+  # Without file extension
+  indexpage: 'index'
+
+############################################################
 
 # PORTFOLIO
 collections:
@@ -45,7 +77,7 @@ highlighter: rouge
 sass:
   sass_dir: _sass
   style: :compressed
-plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
+plugins: [jekyll-paginate-v2, jekyll-seo-tag, jekyll-feed]
 exclude: [".jekyll-cache", "Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", ".idea", "vendor/*",
           "LICENSE", "README.md", "screenshot.png", "assets/package.json", "assets/node_modules", "assets/gulpfile.js"]
 

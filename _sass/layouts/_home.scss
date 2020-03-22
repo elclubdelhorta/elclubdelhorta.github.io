@@ -1,0 +1,51 @@
+#contact-us section {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  @media (min-width: $break) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .address img {
+    padding: 0 5px;
+  }
+}
+
+#who-we-are section {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $break) {
+   flex-wrap: nowrap;
+    justify-content: space-between;
+
+   img {
+      min-width: 400px;
+    }
+  }
+}
+
+#collaborate section {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $break) {
+   flex-wrap: nowrap;
+  justify-content: space-between;
+    img {
+      min-width: 400px;
+    }
+  }
+}
+
+
+.site-footer .images {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  img {
+    padding: 0 20px;
+    max-height: 200px;
+  }
+}

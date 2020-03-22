@@ -6,8 +6,7 @@
   height: 100%;
   font-size: 1.2em;
   text-align: center;
-  color: $header-text-color;
-  background: $header-background-color no-repeat;
+  background: no-repeat;
   background-size: $feature-image-size;
 
   /* --- Responsive --- */
@@ -32,8 +31,9 @@
   h3,
   h4,
   h5 {
-    font-family: $font-family-logo;
-    @extend .header-txt-shadow;
+    font-family: $font-family-headings;
+    color: #111;
+    background-color: #ffffff8c;
   }
 
   p:last-child {

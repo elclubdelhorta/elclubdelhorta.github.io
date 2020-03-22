@@ -59,8 +59,11 @@ a.button {
 }
 
 .button-link {
-  &:hover {
     background: $link-color;
+    color: $background-color;
+
+  &:hover {
+    background: darken($link-color, 10%);
     border: 1px solid $link-color;
     color: $background-color;
     text-decoration: none;

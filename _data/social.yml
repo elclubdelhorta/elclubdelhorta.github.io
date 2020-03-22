@@ -1,13 +1,13 @@
 # Icons on the footer
-rss: true        
+rss: false
 email_address:    # Full email address, e.g. "sam@example.com"
 behance:
 bitbucket:
 dribbble:
-facebook:
+facebook: clubdelhorta
 flickr:
 gitlab:
-github: "sylhare"
+github:
 instagram:
 keybase:
 linkedin:         # Full URL
@@ -30,7 +30,7 @@ share:
   tumblr:
   pinterest:
   pocket:
-  reddit: true
+  reddit:
   linkedin:
   wordpress:
   email: true
